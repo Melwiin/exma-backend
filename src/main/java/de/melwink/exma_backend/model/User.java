@@ -15,13 +15,13 @@ import lombok.AllArgsConstructor;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public Long id;
+    private Long id;
     @Column(nullable = false, unique = true)
-    public String username;
+    private String username;
     @Column(nullable = false, unique = true)
-    public String email;
+    private String email;
     @Column(nullable = false)
-    public String password;
+    private String password;
     @Column(nullable = false)
-    public boolean enabled;
+    private boolean enabled;
 }
